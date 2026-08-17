@@ -1,0 +1,98 @@
+ 
+   *{
+    margin: 0;
+    padding: 0;
+   }
+
+
+   @font-face {
+  font-family: 'NetflixSans-Md';
+  src: url('./fonts/NetflixSans-Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+   
+#hero_image {
+    background-image: url(./images/IN-en-20260803-TRIFECTA-perspective_7730cca2-6324-4104-bf66-1a1f6e1a3e61_large.jpg);
+
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    position: relative;
+    
+    
+   
+    
+}
+
+#opacity_box{
+    opacity: 0.7;
+    background-color: black;
+    height: 100%;
+}
+
+#logo{
+   z-index: 1;
+   width: clamp(80px, 14vw, 148px);
+  margin-right: 45%;
+
+}
+
+nav{
+
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: space-around;
+    align-items: center;
+    width: 99vw;
+}
+
+
+.hero_text{
+    
+    color: white;
+    font-family: NetflixSans-Md;
+   font-size: clamp(30px, 7vw, 56px);
+    font-weight: 700;
+}
+
+.small_hero_text{
+    font-family: NetflixSans-Md;
+    font-size: clamp(10px, 5vw, 20px);
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+}
+
+.smallest_hero_text{
+    font-family: NetflixSans-Md;
+    color: white;
+   font-size: clamp(5px, 3vw, 16px);
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+#hero_text_box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    
+}
+
+label{
+    color: white;
+}
+
+@media (max-width: 600px) {
+    #hero_image {
+        aspect-ratio: 9 / 16;
+    }
+}
