@@ -1,0 +1,296 @@
+ 
+   *{
+    margin: 0;
+    padding: 0;
+   
+   }
+
+   html{
+    overflow-x: hidden;
+    
+   }
+
+   body{
+    background-color: #000000;
+    overflow-x: hidden;
+    
+   }
+
+
+   @font-face {
+  font-family: 'NetflixSans-Md';
+  src: url('./fonts/NetflixSans-Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+   
+#hero_image {
+    background-image: url(./images/IN-en-20260803-TRIFECTA-perspective_7730cca2-6324-4104-bf66-1a1f6e1a3e61_large.jpg);
+
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 16/9;
+    position: relative;
+    mask: radial-gradient(ellipse 53% 60px at 50% 100%, transparent 0 98%, black 100%);
+    
+   
+    
+}
+
+#opacity_box{
+    opacity: 0.7;
+    background-color: black;
+    height: 100%;
+}
+
+#logo{
+   z-index: 1;
+   width: clamp(80px, 14vw, 148px);
+
+}
+
+nav{
+
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    left: 10%;
+}
+
+
+.hero_text{
+    
+    color: white;
+    font-family: NetflixSans-Md;
+   font-size: clamp(30px, 5vw, 56px);
+    font-weight: 700;
+    
+}
+
+.small_hero_text{
+    font-family: NetflixSans-Md;
+    font-size: clamp(10px, 5vw, 20px);
+    font-weight: 500;
+    color: white;
+    margin-top: 10px;
+    
+}
+
+.smallest_hero_text{
+    font-family: NetflixSans-Md;
+    color: white;
+   font-size: clamp(5px, 3vw, 16px);
+    font-weight: 400;
+    margin-top: 25px;
+    
+}
+
+#hero_text_box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    
+}
+
+label{
+    color: white;
+}
+
+#language_btn{
+    background-color: black;
+    color: white;
+    font-family: NetflixSans-Md;
+    font-size: 16px;
+    width: 127px;
+    height: 32px;
+    border-radius: 5px;
+    border: 0.1px,solid,gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+}
+
+#nav_btns{
+    display: flex;
+    gap: 10px;
+    
+}
+
+#sign_in_btn{
+    background-color: red;
+    color: white;
+    font-family: 'NetflixSans-Md';
+    font-size: 14px;
+    border-radius: 5px;
+    border-width: 0px;
+    width: 70px;
+}
+
+#email_input_container{
+    width: clamp(280px, 19vw, 291px);
+    height: clamp(48px, 13.7vh, 57px);
+    background-color: rgba(22, 22, 22, 0.7);
+    border: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+#label_for_email{
+    margin-left: 8px;
+    font-family: NetflixSans-Md;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    position: absolute;
+    top: 17px;
+    transition-property: font-size,top ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.68, 0.06);
+    
+}
+
+#email_input_container:focus-within{
+#label_for_email{
+    top: 7px;
+    font-size: 13px;
+
+}
+    
+}
+
+#email_input{
+    margin-left: 8px;
+    opacity: 1;
+    background-color: rgba(22, 22, 22, 0.7);
+    border-width: 0px;
+    width: 261px;
+    height: 22px;
+    color: white;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+#trial_btn{
+    width: clamp(215px, 18.7vw, 286px);
+    height: clamp(46px, 13.2vh, 55px);
+    background-color: #E50914;
+    border-width: 0px;
+    border-radius: 4px;
+    color: white;
+    font-size: clamp(18px, 1.6vw, 25px);
+    font-family: 'NetflixSans-Md';
+}
+
+#hero_img_input_and_btn{
+display: flex;
+align-items: center;
+margin-top: 15px;
+gap: 7px;
+}
+
+#terms_txt{
+    color: #B4B4B3;
+    margin-top: 15px;
+    font-family: 'NetflixSans-Md';
+}
+
+#decorative_glow{
+    
+    position: absolute;
+
+    width: 70%;
+    height: 35px;
+
+    left: 15%;
+    top: 795px;
+
+    border-radius: 50%;
+
+    background: #0066ff;
+
+    filter: blur(15px);
+
+    opacity: 0.4;
+}
+
+#decorative_line{
+   
+    position: absolute;
+
+    width: 120%;
+    height: 164px;
+
+    left: -10%;
+    top: 792px;
+
+    border: 4px solid transparent;
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255, 0, 102, 0.25) 12%,
+            rgba(255, 0, 102, 1) 25%,
+            rgba(255, 0, 102, 1) 75%,
+            rgba(255, 0, 102, 0.25) 88%,
+            transparent 100%
+        ) border-box;
+
+    mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+
+    mask-composite: exclude;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+
+    clip-path: inset(0 0 50% 0);
+
+    z-index: 2;
+   
+}
+
+
+
+@media (max-width: 600px) {
+    
+    #lang_btn_txt{
+        display: none;
+    }
+
+    #language_btn{
+     width: 62px; 
+     height: 32px;
+    }
+
+    #hero_img_input_and_btn{
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width: 700px){
+    #hero_image {
+        aspect-ratio: 9 / 16;
+    }
+}
