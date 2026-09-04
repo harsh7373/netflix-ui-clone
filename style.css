@@ -1,4 +1,11 @@
- 
+ @font-face {
+  font-family: 'NetflixSans-Md';
+  src: url('./fonts/NetflixSans-Md.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
    *{
     margin: 0;
     padding: 0;
@@ -17,13 +24,9 @@
    }
 
 
-   @font-face {
-  font-family: 'NetflixSans-Md';
-  src: url('./fonts/NetflixSans-Md.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
+   header{
+    position: relative;
+   }
 
    
 #hero_image {
@@ -215,10 +218,12 @@ gap: 7px;
     position: absolute;
 
     width: 70%;
+
     height: 35px;
 
     left: 15%;
-    top: 795px;
+
+    bottom: 25px;
 
     border-radius: 50%;
 
@@ -237,7 +242,7 @@ gap: 7px;
     height: 164px;
 
     left: -10%;
-    top: 792px;
+    bottom: -111px;
 
     border: 4px solid transparent;
     border-radius: 50%;
@@ -286,6 +291,8 @@ gap: 7px;
     #hero_img_input_and_btn{
         flex-direction: column;
     }
+
+    
 
 }
 
