@@ -272,10 +272,15 @@ gap: 7px;
    
 }
 
+#slider_wrapper{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+}
+
 #movie_slider_container{
     display: flex;
-   margin-top: clamp(33px,3.6vw,56px);
-   margin-left: clamp(37px, 14.4vw, 387px);
     gap: 26px;
     width: 70vw;
     overflow-x: auto;
@@ -322,12 +327,23 @@ gap: 7px;
 }
 
 .movie_cards{
-  width: clamp(112px,11.9vw,183px);
-  height: clamp(156px,18.9vw,253px);
+  width: clamp(112px,11.9vw,270px);
+  height: clamp(156px,18.9vw,436px);
   flex-shrink: 0;
   border-radius: 8px;
  
 }
+
+.ranking{
+    font-size: 100px;
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    position: absolute;
+    inset: 0;
+   font-family: 'NetflixSans-Md';
+}
+
 
 
 
@@ -353,5 +369,11 @@ gap: 7px;
 @media(max-width: 700px){
     #hero_image {
         aspect-ratio: 9 / 16;
+    }
+}
+
+@media (min-width: 2561px) {
+    #movie_slider_container{
+        width: 32vw;
     }
 }
