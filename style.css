@@ -330,18 +330,59 @@ gap: 7px;
   width: clamp(112px,11.9vw,270px);
   height: clamp(156px,18.9vw,436px);
   flex-shrink: 0;
-  border-radius: 8px;
+  border-radius: 8px; 
  
 }
 
 .ranking{
-    font-size: 100px;
+    font-size: clamp(64px, 6.6vw, 150px);
     font-weight: 700;
     color: black;
     -webkit-text-stroke: 3px white;
     position: absolute;
     inset: 0;
-   font-family: 'NetflixSans-Md';
+    top: clamp(70px, 11.2vw, 255px);
+    font-family: 'NetflixSans-Md';
+}
+
+#rank_2{
+    left: -23px;
+}
+
+#rank_3{
+    left: -23px;
+}
+
+#rank_4{
+    left: -23px;
+}
+
+#rank_5{
+    left: -23px;
+}
+
+#rank_6{
+    left: -23px;
+}
+
+#rank_7{
+    left: -23px;
+}
+
+#rank_8{
+    left: -23px;
+}
+
+#rank_9{
+    left: -23px;
+}
+
+#rank_10{
+    left: -23px;
+}
+
+.card_wrapper{
+    position: relative;
 }
 
 
