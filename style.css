@@ -93,10 +93,14 @@ nav{
 .smallest_hero_text{
     font-family: NetflixSans-Md;
     color: white;
-   font-size: clamp(5px, 3vw, 16px);
+   font-size: clamp(5px, 4.6vw, 16px);
     font-weight: 400;
     margin-top: 25px;
     
+}
+
+.break_text_on_mobile{
+    display: none;
 }
 
 #hero_text_box{
@@ -145,7 +149,7 @@ label{
     width: 70px;
 }
 
-#email_input_container{
+.email_input_container{
     width: clamp(280px, 19vw, 291px);
     height: clamp(48px, 13.7vh, 57px);
     background-color: rgba(22, 22, 22, 0.7);
@@ -158,7 +162,12 @@ label{
     position: relative;
 }
 
-#label_for_email{
+#footer_email_input_container{
+    width: clamp(280px, 49.7vw, 561px);
+    height: 56px;
+}
+
+.label_for_email{
     margin-left: 8px;
     font-family: NetflixSans-Md;
     color: rgba(255, 255, 255, 0.7);
@@ -172,8 +181,9 @@ label{
     
 }
 
-#email_input_container:focus-within{
-#label_for_email{
+.email_input_container:focus-within{
+.label_for_email{
+
     top: 7px;
     font-size: 13px;
 
@@ -181,7 +191,8 @@ label{
     
 }
 
-#email_input{
+.email_input{
+
     margin-left: 8px;
     opacity: 1;
     background-color: rgba(22, 22, 22, 0.7);
@@ -193,7 +204,7 @@ label{
     outline: none;
 }
 
-#trial_btn{
+.trial_btn{
     width: clamp(215px, 18.7vw, 286px);
     height: clamp(46px, 13.2vh, 55px);
     background-color: #E50914;
@@ -204,11 +215,13 @@ label{
     font-family: 'NetflixSans-Md';
 }
 
-#hero_img_input_and_btn{
+.hero_img_input_and_btn{
 display: flex;
 align-items: center;
 margin-top: 15px;
 gap: 7px;
+justify-content: center;
+flex-wrap: wrap;
 }
 
 #terms_txt{
@@ -550,6 +563,14 @@ margin-top: 46px;
     font-family: NetflixSans-Md;
 }
 
+#footer_heading_txt_flex{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+
+}
+
 @media (max-width: 600px) {
     
     #lang_btn_txt{
@@ -570,9 +591,14 @@ margin-top: 46px;
 }
 
 @media(max-width: 700px){
+
     #hero_image {
         aspect-ratio: 9 / 16;
     }
+.break_text_on_mobile{
+    display: block;
+}
+
 }
 
 @media (min-width: 2561px) {
