@@ -571,6 +571,44 @@ margin-top: 46px;
 
 }
 
+#flex_container_call_info{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#call_info_heading_wrap{
+display: flex;
+width: clamp(247px, 77.6vw, 1795px);
+}
+
+#call_info{
+color: rgba(255, 255, 255, 0.7);
+font-size: 16px;
+font-family: NetflixSans-Md;
+
+}
+
+#footer_links_outer_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 149px;
+    margin-top: 50px;
+}
+
+.footer_links_inner_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_links{
+    color: rgba(255, 255, 255, 0.7);
+    font-family: NetflixSans-Md;
+}
+
 @media (max-width: 600px) {
     
     #lang_btn_txt{
@@ -584,6 +622,15 @@ margin-top: 46px;
 
     #hero_img_input_and_btn{
         flex-direction: column;
+    }
+
+    #footer_links_outer_container{
+        display: block;
+        margin-left: 25px;
+    }
+
+    .footer_links_inner_container{
+        margin-top: 15px;
     }
 
     
