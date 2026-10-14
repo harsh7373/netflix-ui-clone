@@ -117,7 +117,7 @@ label{
     color: white;
 }
 
-#language_btn{
+.language_btn{
     background-color: black;
     color: white;
     font-family: NetflixSans-Md;
@@ -579,7 +579,7 @@ margin-top: 46px;
 
 #call_info_heading_wrap{
 display: flex;
-width: clamp(247px, 77.6vw, 1795px);
+width: clamp(247px, 55.6vw, 1039px);
 }
 
 #call_info{
@@ -589,13 +589,18 @@ font-family: NetflixSans-Md;
 
 }
 
+#footer_links_flex_container{
+    display: flex;
+    justify-content: center;
+}
+
 #footer_links_outer_container{
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 149px;
     margin-top: 50px;
+    gap: 6.5vw;
 }
 
 .footer_links_inner_container{
@@ -609,15 +614,74 @@ font-family: NetflixSans-Md;
     font-family: NetflixSans-Md;
 }
 
+#footer_language_btn{
+
+margin-top: 60px;
+
+}
+
+#footer_btn_flex_container{
+    display: flex;
+    justify-content: center;
+}
+
+#footer_btn_container{
+    width: clamp(709px, 55.9vw, 1050px);
+}
+
+#footer_copyright_flex{
+    display: flex;
+    justify-content: center;
+}
+
+#footer_copyright_container{
+ width: clamp(709px, 55.9vw, 1050px);
+}
+
+#footer_copyright{
+
+    color: rgba(255, 255, 255, 0.7);
+    font-family: NetflixSans-Md;
+    margin-top: 40px;
+
+}
+
+#footer_bot_test_flex{
+    display: flex;
+    justify-content: center;
+}
+
+#footer_bot_test_container{
+width: clamp(709px, 55.9vw, 1050px);
+}
+
+#footer_bot_test{
+color: rgba(255, 255, 255, 0.7);
+    font-family: NetflixSans-Md;
+    margin-top: 40px;
+    font-size: 13px;
+
+}
+
 @media (max-width: 600px) {
     
-    #lang_btn_txt{
+    .lang_btn_txt{
         display: none;
     }
 
-    #language_btn{
+    #footer_lang_btn_txt{
+        display: block;
+    }
+
+    .language_btn{
      width: 62px; 
      height: 32px;
+    }
+
+    #footer_language_btn{
+         width: 127px;
+         height: 32px;
+         margin-left: 24px;
     }
 
     #hero_img_input_and_btn{
@@ -633,7 +697,19 @@ font-family: NetflixSans-Md;
         margin-top: 15px;
     }
 
+    #footer_links_flex_container{
     
+    justify-content: unset;
+}
+
+    #footer_copyright{
+        margin-left: 24px;
+    }
+
+    #footer_bot_test{
+     margin-left: 24px;
+
+}
 
 }
 
